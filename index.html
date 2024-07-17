@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pet's Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section id="home">
+        <header>
+            Pet's Age Converter
+        </header>
+        <nav class="topdiv">
+            <div id="navigate">
+                <!-- Navigation buttons can be added here -->
+            </div>
+            <div id="dark-mode-toggle">
+                <button onclick="toggleDarkMode()">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </section>
+    <br>  
+    <div id="all-conversion-sections">
+        <section id="cat" class="single_field">          
+          <div id="ct">
+            <figure>
+              <img src="img/ucingomel.jpg"/>
+              <figcaption>Cat's Age to Human's Age</figcaption>
+            </figure>
+            <article>
+              <fieldset>
+                <label for="Cat">Cat's Weight</label><br>
+                <select id="catWeight" name="catWeight">
+                  <option value="blank">--</option>
+                  <option value="small">10 lbs or less</option>
+                  <option value="medium">11-20 lbs</option>
+                  <option value="large">21 lbs or more</option>
+                </select><br><br>
+                <label for="Cat">Cat's Age</label> <br/>
+                <input type="number" id="catAge"> <br><br>
+                <button id="cat" class="c" onclick="catty()"> Convert </button> <br><br>
+                <input type="number" id="humanAge2">  <br/>
+                <label for="Cat">Human's Age</label>    
+              </fieldset>   
+            </article>
+          </div>
+        </section>
+        <br>
+        <section id="dog" class="single_field">
+          <div id="dg">
+            <figure>
+              <img src="img/dogcute.jpg">
+              <figcaption>Dog's Age to Human's Age</figcaption>
+            </figure>
+            <article>
+              <fieldset>
+                <label for="Dog">Dog's Weight</label><br>
+                <select id="dogWeight" name="dogWeight">
+                  <option value="blank">--</option>
+                  <option value="small">20 lbs or less</option>
+                  <option value="medium">21-50 lbs</option>
+                  <option value="large">51-100 lbs</option>
+                </select><br><br>
+                <label for="Dog">Dog's Age</label> <br/>
+                <input type="number" id="dogAge"> <br> <br>
+                <button id="dog" class="c" onclick="doggy()"> Convert </button> <br/><br>
+                <input type="number" id="humanAge1"> <br/>
+                <label for="Dog">Human's Age</label>
+              </fieldset>
+            </article>
+          </div>
+        </section>
+        <br>
+        <section id="fish" class="single_field">
+          <div id="fh">
+            <figure>
+              <img src="img/guppy.jpg"/>
+              <figcaption>Fish's Age to Human's Age</figcaption>
+            </figure>
+            <article>
+              <fieldset>
+                <label for="Fish">Species</label><br>
+                <select id="fishType" name="fishType">
+                  <option value="blank">--</option>
+                  <option value="koi">Koi</option>
+                  <option value="guppy">Guppy</option>
+                  <option value="goldFish">Gold Fish</option>
+                </select><br><br>
+                  <label for="Fish">Fish's Age</label> <br/>
+                  <input type="number" id="fishAge">  <br><br>
+                  <button id="fish" class="c" onclick="fishy()"> Convert </button> <br><br>
+                  <input type="number" id="humanAge3">  <br/>
+                  <label for="fish">Human's Age</label>
+              </fieldset>
+            </article>
+          </div>
+        </section>
+      </div>
+    <footer>
+      <p>© 2024 Heikal Iskandar. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
